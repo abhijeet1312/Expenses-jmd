@@ -1,0 +1,53 @@
+<%- include('../partials/header') %>
+    <div class="container mt-5">
+        <h1>Assignments</h1>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+
+                        <!-- Makes POST request to /register route -->
+                        <form action="/user-expense" method="POST">
+                            <!-- <div class="form-group">
+                                <label for="UserName">UserName</label>
+                                <input type="text" class="form-control" name="UserName">
+                            </div> -->
+                            <div class="form-group">
+                                <label for="Task">Total bill</label>
+                                <input type="number" class="form-control" name="bill">
+                            </div>
+                            <div class="form-group">
+                                <label for="AdminName">Total friends count</label>
+                                <input type="number" class="form-control" name="friendsCount">
+                            </div>
+                            <div class="form-group">
+                                <label for="AdminName">Purpose</label>
+                                <input type="text" class="form-control" name="purpose">
+                            </div>
+                            <button type="submit" class="btn btn-dark" name="action" value="equal">Equal</button>
+                            <button type="submit" class="btn btn-dark" name="action" value="exact">Exact</button>
+                            <button type="submit" class="btn btn-dark" name="action" value="percentage">Percentage</button>
+                            <!-- <button type="submit" class="btn btn-dark" name="action" value="overallexpenses">Over_All_Expense </button> -->
+
+                            <a class="btn btn-light btn-dark" href="/logoutUser" role="button">Log Out</a>
+
+                            <a class="btn btn-light btn-dark" href="/userDetails" role="button">User Details</a>
+                            <a class="btn btn-light btn-dark" href="/overallExpenses" role="button">OverAllExpenses</a>
+                            <a class="btn btn-light btn-dark" href="/download" role="button">Download Data</a>
+
+
+
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <%- include('../partials/footer') %>

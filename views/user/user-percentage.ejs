@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+    <div class="container mt-5">
+        <h1>Please ensure the total percentage by friends is less than 100</h1>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/user-friends-percentage" method="POST">
+                            <% for(var i=0;i<friendsCount;i++) {%>
+                                <div class="form-group">
+                                    <label for="Task">Percentage  by Friend <%= i+1 %></label>
+                                    <input type="number" class="form-control" name="bill<%= i+1 %>">
+                                </div>
+
+
+                                <!-- <label for="Task">Total Friends = <%=  %></label> -->
+                                <% }%>
+                                    <!-- <label for="Task" class="btn btn-dark" name="totalfriends">Total Friends = <%= friendsCount %></label> -->
+                                    <input type="hidden" name="totalfriends" value="<%= friendsCount %>">
+                                    <input type="hidden" name="totalamount" value="<%= totalAmount %>">
+                                    <input type="hidden" name="purpose" value="<%= purpose %>">
+
+                                    <button type="submit" class="btn btn-dark">Get Expenses</button>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>

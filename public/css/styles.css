@@ -1,0 +1,26 @@
+body {
+    background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+}
+
+.pdf-hide {
+    display: block;
+    /* Change to none in print media query */
+}
+
+@media print {
+    .pdf-hide {
+        display: none !important;
+    }
+}

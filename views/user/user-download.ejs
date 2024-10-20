@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+    <!-- <a class="btn btn-light btn-dark pdf-hide" href="/download-pdf" role="button">Get Your PDF !!!!</a> -->
+    <form action="/download-pdf/<%= EMAIL %>" method="POST">
+
+        <div class="form-group">
+            <label for="Task">Enter your Email</label>
+            <input type="text" class="form-control" name="mail">
+        </div>
+        <button type="submit" class="btn btn-dark">Get Your PDF!!!</button>
+    </form>

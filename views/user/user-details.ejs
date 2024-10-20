@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+    <div class="container mt-5">
+        <h1>Individual User Details </h1>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+
+                        <p>
+                            Hey , The User is
+                            <%= NAME %>
+                                <br> The Email is
+                                <%= EMAIL %>
+                                    <br> The Mobile Number is
+                                    <%= MOBILENUMBER %>
+                        </p>
+                        <a class="btn btn-light btn-dark" href="/userOverallExpenses" role="button">Get Your expense !!!!</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>
